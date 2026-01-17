@@ -105,15 +105,19 @@ export class Player {
                 translate(this.x + this.w / 2, this.y + this.h / 2);
                 rotate(this.jumpR);
                 translate(-(this.x + this.w / 2), -(this.y + this.h / 2));
-                fill(201, 176, 123);
-                rect(this.x, this.y, this.w, this.h, 5);
+
                 fill(0);
-                rect(this.x, this.y + this.w / 2, this.w, this.h / 2, 0, 0, 5, 5);
-                rect(this.x, this.y, this.w, this.h / 5, 5, 5, 0, 0);
+                rect(this.x, this.y, this.w, this.h, 5);
+
+                fill(201, 176, 123);
+                rect(this.x, this.y + this.h / 5, this.w, this.h * 3 / 10);
+
                 fill(204, 204, 0);
                 rect(this.x + this.w * 13 / 30, this.y + this.h * 7 / 11, this.w / 8, this.h / 5, 0, 5, 5, 0);
+
                 fill(97, 74, 13);
                 rect(this.x, this.y + this.h * 2 / 3, this.w, this.h / 8);
+
                 fill(204, 204, 0);
                 rect(this.x + this.w / 3, this.y + this.h * 7 / 11, this.w / 10, this.h / 5, 5, 0, 0, 5);
                 //Eyes(this, this);
